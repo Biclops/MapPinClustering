@@ -17,9 +17,14 @@
 		0AF1576C152DCF1800FB2DC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1576B152DCF1800FB2DC0 /* ViewController.m */; };
 		0AF1576F152DCF1800FB2DC0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1576D152DCF1800FB2DC0 /* ViewController.xib */; };
 		0AF15776152DCF5000FB2DC0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF15775152DCF5000FB2DC0 /* MapKit.framework */; };
-		0AF15779152DD33B00FB2DC0 /* ClusteredAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF15778152DD33B00FB2DC0 /* ClusteredAnnotation.m */; };
+		0AF15779152DD33B00FB2DC0 /* AggregatableAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF15778152DD33B00FB2DC0 /* AggregatableAnnotation.m */; };
 		0AF1577B152DDA2000FB2DC0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF1577A152DDA2000FB2DC0 /* CoreLocation.framework */; };
 		0AF1577D152DE95200FB2DC0 /* locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AF1577C152DE95200FB2DC0 /* locations.plist */; };
+		84AB38F515FAA1F9008F75CB /* AggregateAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB38F415FAA1F9008F75CB /* AggregateAnnotationView.m */; };
+		84EB847215FFB35F0074DB77 /* cluster.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EB847015FFB35F0074DB77 /* cluster.png */; };
+		84EB847315FFB35F0074DB77 /* cluster@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EB847115FFB35F0074DB77 /* cluster@2x.png */; };
+		84F8F30115FAB87600A8C230 /* AggregateAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F8F30015FAB87600A8C230 /* AggregateAnnotation.m */; };
+		9B46A76215F8287900B90696 /* MKMapView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B46A76115F8287900B90696 /* MKMapView+Helpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +44,19 @@
 		0AF1576B152DCF1800FB2DC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0AF1576E152DCF1800FB2DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		0AF15775152DCF5000FB2DC0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		0AF15777152DD33B00FB2DC0 /* ClusteredAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusteredAnnotation.h; sourceTree = "<group>"; };
-		0AF15778152DD33B00FB2DC0 /* ClusteredAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusteredAnnotation.m; sourceTree = "<group>"; };
+		0AF15777152DD33B00FB2DC0 /* AggregatableAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; path = AggregatableAnnotation.h; sourceTree = "<group>"; };
+		0AF15778152DD33B00FB2DC0 /* AggregatableAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AggregatableAnnotation.m; sourceTree = "<group>"; };
 		0AF1577A152DDA2000FB2DC0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0AF1577C152DE95200FB2DC0 /* locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = locations.plist; sourceTree = "<group>"; };
+		84AB38F315FAA1F9008F75CB /* AggregateAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AggregateAnnotationView.h; sourceTree = "<group>"; };
+		84AB38F415FAA1F9008F75CB /* AggregateAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AggregateAnnotationView.m; sourceTree = "<group>"; };
+		84EB847015FFB35F0074DB77 /* cluster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cluster.png; sourceTree = "<group>"; };
+		84EB847115FFB35F0074DB77 /* cluster@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cluster@2x.png"; sourceTree = "<group>"; };
+		84F8F2FF15FAB87600A8C230 /* AggregateAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AggregateAnnotation.h; sourceTree = "<group>"; };
+		84F8F30015FAB87600A8C230 /* AggregateAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AggregateAnnotation.m; sourceTree = "<group>"; };
+		9B46A75F15F8287900B90696 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		9B46A76015F8287900B90696 /* MKMapView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Helpers.h"; sourceTree = "<group>"; };
+		9B46A76115F8287900B90696 /* MKMapView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Helpers.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +78,12 @@
 		0A5AE022152DFF8F00375ABB /* ClusteringMapView */ = {
 			isa = PBXGroup;
 			children = (
-				0AF15777152DD33B00FB2DC0 /* ClusteredAnnotation.h */,
-				0AF15778152DD33B00FB2DC0 /* ClusteredAnnotation.m */,
+				84F8F2FF15FAB87600A8C230 /* AggregateAnnotation.h */,
+				84F8F30015FAB87600A8C230 /* AggregateAnnotation.m */,
+				84AB38F315FAA1F9008F75CB /* AggregateAnnotationView.h */,
+				84AB38F415FAA1F9008F75CB /* AggregateAnnotationView.m */,
+				0AF15777152DD33B00FB2DC0 /* AggregatableAnnotation.h */,
+				0AF15778152DD33B00FB2DC0 /* AggregatableAnnotation.m */,
 				0A5AE01F152DFF8900375ABB /* ClusteringMapView.h */,
 				0A5AE020152DFF8900375ABB /* ClusteringMapView.m */,
 			);
@@ -120,9 +138,14 @@
 			children = (
 				0AF15760152DCF1800FB2DC0 /* MapPinClustering-Info.plist */,
 				0AF15761152DCF1800FB2DC0 /* InfoPlist.strings */,
-				0AF15764152DCF1800FB2DC0 /* main.m */,
-				0AF15766152DCF1800FB2DC0 /* MapPinClustering-Prefix.pch */,
 				0AF1577C152DE95200FB2DC0 /* locations.plist */,
+				0AF15764152DCF1800FB2DC0 /* main.m */,
+				9B46A75F15F8287900B90696 /* Macros.h */,
+				0AF15766152DCF1800FB2DC0 /* MapPinClustering-Prefix.pch */,
+				9B46A76015F8287900B90696 /* MKMapView+Helpers.h */,
+				9B46A76115F8287900B90696 /* MKMapView+Helpers.m */,
+				84EB847015FFB35F0074DB77 /* cluster.png */,
+				84EB847115FFB35F0074DB77 /* cluster@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,6 +204,8 @@
 				0AF15763152DCF1800FB2DC0 /* InfoPlist.strings in Resources */,
 				0AF1576F152DCF1800FB2DC0 /* ViewController.xib in Resources */,
 				0AF1577D152DE95200FB2DC0 /* locations.plist in Resources */,
+				84EB847215FFB35F0074DB77 /* cluster.png in Resources */,
+				84EB847315FFB35F0074DB77 /* cluster@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,8 +219,11 @@
 				0AF15765152DCF1800FB2DC0 /* main.m in Sources */,
 				0AF15769152DCF1800FB2DC0 /* AppDelegate.m in Sources */,
 				0AF1576C152DCF1800FB2DC0 /* ViewController.m in Sources */,
-				0AF15779152DD33B00FB2DC0 /* ClusteredAnnotation.m in Sources */,
+				0AF15779152DD33B00FB2DC0 /* AggregatableAnnotation.m in Sources */,
 				0A5AE021152DFF8900375ABB /* ClusteringMapView.m in Sources */,
+				9B46A76215F8287900B90696 /* MKMapView+Helpers.m in Sources */,
+				84AB38F515FAA1F9008F75CB /* AggregateAnnotationView.m in Sources */,
+				84F8F30115FAB87600A8C230 /* AggregateAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
